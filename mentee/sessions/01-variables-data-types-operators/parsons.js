@@ -64,14 +64,11 @@ console.log(age === typed); // checking for data type and value
 
 // Fill in the blanks so it logs `Total: 55`
 
-
-
 // const price = 20;
 // const quantity = 3;
 // let total = ____ * ____;
 // total ____ 5;              // take $5 off
 // console.log(`Total: ${____}`);
-
 
 // const price = 20;
 // const quantity = 3;
@@ -79,8 +76,8 @@ console.log(age === typed); // checking for data type and value
 // total -= 5; // 55
 // console.log(`Total: ${total}`); // 55
 
-
 const price = 20;
 const quantity = 3;
-let total = ((${price} * ${quantity}) - 5);
-console.lot(`Total: ${total}`);
+let total = price * quantity - 5;
+// total = total - 5;
+console.log(`Total: ${total}`);
