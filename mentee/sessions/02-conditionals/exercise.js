@@ -16,3 +16,12 @@
 // X   if (score >= 80) 
 // Y   if (score = 90) 
 
+const score = 85; //B, C, A, D, J
+
+if (score >= 90) {           
+    grade = "A"; 
+    else if (score >= 80)
+        grade = "B";
+}
+console.log(`Grade: ${grade}`);
+
