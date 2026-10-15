@@ -20,6 +20,7 @@
 //B, C, A, D, I, J
 
 const score = 85; 
+let grade = "";
 
 if (score >= 90) {           
     grade = "A"; 
