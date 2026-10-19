@@ -3,8 +3,19 @@
 console.log("make.js running");
 
 
-if (___){
+const inputValue = "";
+
+if (inputValue){
     console.log("Thank you!")
-} ___{
+} else{
     console.log("Please Type Something!")
-}
+} //Please Type Something!
+
+
+
+const itemsLeft = 0;
+
+if (itemsLeft === 0) {
+    console.log("Sold out")
+};
+
