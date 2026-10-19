@@ -16,3 +16,9 @@ if (isDone) {
 }
 
 console.log(`${taskName}: ${status}`);
+
+// const taskName = "Buy milk";
+// const isDone = false;
+// let priority = 2;
+
+// console.log(`${taskName} — done: ${isDone}, priority ${priority}`);
