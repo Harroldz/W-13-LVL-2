@@ -54,3 +54,39 @@ if (itemsLeft === 0) {
 
 //  Build a **shipping calculator** in `make.js`. Start with three variables: an order total, a country (`"local"` or `"international"`), and whether the customer is a member.
 
+// > Rules:
+// >
+// > - Members always ship free
+// > - Local orders over $50 ship free
+// > - Other local orders cost $5
+// > - International orders cost $15
+// >
+// > Your code must:
+// >
+// > 1. Use `if` / `else if` / `else`, with a **comment explaining why your checks are in that order**
+// > 2. Use `&&` at least once
+// > 3. Use a ternary to build a label: `"Free shipping"` or `"Shipping: $5"`
+// > 4. Log the label
+// >
+// > Then test it: change the three starting variables to try **at least four different cases**. Write each case and its output as a comment.
+
+
+let orderTotal = 333;
+let country = "international";
+let isMember = false;
+
+let shippingCost;
+
+if (isMember) {
+  shippingCost = 0;
+} else if (country === "local" && orderTotal > 50) {
+  shippingCost = 0;
+} else if (country === "local") {
+  shippingCost = 5;
+} else {
+  shippingCost = 15;
+}
+
+let label = shippingCost === 0 ? "Free shipping" : `Shipping: $${shippingCost}`;
+
+console.log(label);
