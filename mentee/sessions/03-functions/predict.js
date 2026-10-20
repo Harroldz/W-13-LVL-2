@@ -31,10 +31,32 @@ function getLabel(priority) {
   }
 
   if (priority === 2) {
-    console.log("Normal");
+    return "Normal";
   }
+  return "Later";
 }
 
-console.log(getLabel(1)); // Urgent // Urgent // Urgent
-console.log(getLabel(2)); // Normal // Normal, Undefined // Normal
-console.log(getLabel(3)); // Undefined // Undefined // Undefined.
+console.log(getLabel()); // Later
+
+function double(n) {
+  return n * 2;
+}
+
+let a = 3;
+let b = double(a);
+a = double(b) + a;
+
+console.log(a);
+console.log(b);
+
+// 3 -
+// 3 6
+// 9 6
+
+// 3 -
+// 3 6
+// 15 6
+
+// 3 -
+// 3 6
+// 18 12
