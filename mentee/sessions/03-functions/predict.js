@@ -18,3 +18,23 @@ if (x > 11) {
   x = 0;
 }
 console.log(x);
+
+const label = 0 ? "Yes" : "no";
+
+console.log(label); //
+
+// condition1; output1 : condition2 ? output2 : fallback
+
+function getLabel(priority) {
+  if (priority === 1) {
+    return "Urgent";
+  }
+
+  if (priority === 2) {
+    console.log("Normal");
+  }
+}
+
+console.log(getLabel(1)); // Urgent // Urgent // Urgent
+console.log(getLabel(2)); // Normal // Normal, Undefined // Normal
+console.log(getLabel(3)); // Undefined // Undefined // Undefined.
