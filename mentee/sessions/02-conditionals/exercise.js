@@ -17,29 +17,31 @@
 // Y   if (score = 90) NO
 
 
-// B, E, C, F, A, D, I, J
+// B, E, C, F, A, D, G, H, I, J
 
-// const score = 85; 
+// const score = 100; 
 // let grade = "";
 
 // if (score >= 90) {           
 //     grade = "A"; 
-// }   else {if (score >= 80)
-//         grade = "B";
+// } else if (score >= 80) {
+//     grade = "B";
+// } else {
+//   grade = "C";
 // }
 // console.log(`Grade: ${grade}`);
 
 // part 2
 
-let orderTotal = 600;
+let orderTotal = 500;
 let country = "international";
-let isMember = false;
+let isMember = true;
 
 let shippingCost;
 
 // if orderTotal goes to the top for bypasses all rules should total amount be over 500
-if(orderTotal >= 500) {
-    orderShippingFee = 0;
+if(orderTotal > 500) {
+  shippingCost = 0;
 } else if (isMember) {
   shippingCost = 0;
 } else if (country === "local" && orderTotal > 50) {
