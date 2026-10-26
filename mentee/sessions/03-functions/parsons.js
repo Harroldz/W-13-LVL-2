@@ -73,3 +73,36 @@ console.log("parsons.js running");
 
 // // const greet = (___) => `Hello, ${name}`;
 // // console.log(greet("Ana")) // Hello, Ana
+
+
+// const isAdult = (age) => {
+//   return age >= 18;
+// };
+
+// console.log(isAdult(15));
+
+
+// const isAdult = (age) => age >= 18;
+// console.log(isAdult(15));
+
+// > A **tip calculator**. The user has a bill amount, a tip percentage, and a number of people splitting the bill. The app shows the tip, the total, and what each person pays.
+
+// List the functions you would need. For each one, write:
+
+// Its name
+// What it needs (parameters)
+//what if gives back
+
+
+// calculateTip => Bill amount and tip percentage => Tip amount
+// calculateTotal => Bill amount and tip amount => the Total bill including the tips
+// calculatePerperson => the total amount and the people => the amount each person pays
+
+// 
+//     One function would be called addTipAmount.
+//     This function would need the bill amount and the tip percentage.
+//     This function would give back the amount of the bill with the tip added to that total.
+
+//     One function would be called splitBill.
+//     This function would need an amount representing the total bill with tip and an amount of people to split the total between.
+//     This function would give back the amount each person owes.
