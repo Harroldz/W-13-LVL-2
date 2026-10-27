@@ -39,3 +39,32 @@ console.log("b")
 }
 
 //b is result
+
+// Prediction
+
+function complete(task, count) {
+  task.isDone = true;
+  count = count + 1;
+}
+
+const task = {
+  title: "Buy milk",
+  isDone: false,
+};
+
+let doneCount = 0;
+
+complete(task, doneCount);
+
+console.log(task.isDone); // true // false // true // true // true
+// console.log(doneCount); // 1 // 0 // 0 // 1 // 0
+
+// const person = {
+//   height: "5ft",
+//   name: "Bob",
+//   favColor: "Blue",
+//   isStudent: false,
+//   age: 33,
+// };
+
+// console.log(person.age);
