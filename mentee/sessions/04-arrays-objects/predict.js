@@ -32,31 +32,31 @@ console.log("predict.js running");
 // "" ? "a" : "b"
 
 
-if ("") {
-console.log("a")
-} else {
-console.log("b")
-}
+// if ("") {
+// console.log("a")
+// } else {
+// console.log("b")
+// }
 
 //b is result
 
 // Prediction
 
-function complete(task, count) {
-  task.isDone = true;
-  count = count + 1;
-}
+// function complete(task, count) {
+//   task.isDone = true;
+//   count = count + 1;
+// }
 
-const task = {
-  title: "Buy milk",
-  isDone: false,
-};
+// const task = {
+//   title: "Buy milk",
+//   isDone: false,
+// };
 
-let doneCount = 0;
+// let doneCount = 0;
 
-complete(task, doneCount);
+// complete(task, doneCount);
 
-console.log(task.isDone); // true // false // true // true // true
+//console.log(task.isDone); // true // false // true // true // true
 // console.log(doneCount); // 1 // 0 // 0 // 1 // 0
 
 // const person = {
@@ -74,11 +74,33 @@ console.log(task.isDone); // true // false // true // true // true
 // local aka function
 // block scope
 
-if (" ") {
-  let age = 5;
-  const gender = "Female";
-  console.log(age);
-  console.log(gender);
-}
+// if (" ") {
+//   let age = 5;
+//   const gender = "Female";
+//   console.log(age);
+//   console.log(gender);
+// }
 
 // console.log(age);
+
+const user = {
+    name: "John",
+    tasks: [
+        {title: "Buy Milk", isDone: false},
+         {title: "Call Bank", isDone: true}
+    ]
+};
+
+
+
+// const color1 = "Red"
+// const color2 = "Yellow"
+// const color3 = "Orange"
+// const color4 = "Blue"
+// const color5 = "Gold"
+
+// const colors = ["Red", "Yellow", "Orange", "Blue"];
+
+// Index of the array.
+
+// console.log(colors[3]);
