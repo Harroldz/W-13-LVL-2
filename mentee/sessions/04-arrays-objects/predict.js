@@ -91,6 +91,12 @@ const user = {
     ]
 };
 
+console.log(user.name); // John
+console.log(user.tasks.length); //2
+console.log(user.tasks[1].title); // Call Bank
+console.log(user.tasks[0].isDone); //Buy Milk
+console.log(user.tasks[2]); // undefined
+console.log(user.tasks[2].title); // undefined/ type error
 
 
 // const color1 = "Red"
