@@ -68,3 +68,17 @@ console.log(task.isDone); // true // false // true // true // true
 // };
 
 // console.log(person.age);
+
+
+// Global
+// local aka function
+// block scope
+
+if (" ") {
+  let age = 5;
+  const gender = "Female";
+  console.log(age);
+  console.log(gender);
+}
+
+// console.log(age);
