@@ -6,13 +6,13 @@ console.log("parsons.js running");
 
 // Goal output: `Call bank`
 
-const user = {
-  name: "John",
-  tasks: [
-    { title: "Buy Milk", isDone: false },
-    { title: "Call Bank", isDone: true },
-  ],
-};
+// const user = {
+//   name: "John",
+//   tasks: [
+//     { title: "Buy Milk", isDone: false },
+//     { title: "Call Bank", isDone: true },
+//   ],
+// };
 
 // A   const tasks = user.tasks;
 // B   const second = tasks[1];
@@ -95,24 +95,24 @@ const user = {
 // const last = tasks[tasks.____ - 1]
 // console.log(getTitle(last)) // Pay rent
 
-const tasks = [
-  { title: "Buy Milk" }, // 0
-  { title: "Call Bank" }, // 1
-  { title: "Pay Rent" }, // 2
-];
+// const tasks = [
+//   { title: "Buy Milk" }, // 0
+//   { title: "Call Bank" }, // 1
+//   { title: "Pay Rent" }, // 2
+// ];
 
-function getTitle(task) {
-  return task.title;
-}
+// function getTitle(task) {
+//   return task.title;
+// }
 
-const last = tasks[tasks.length - 1];
-console.log(getTitle(last)); // Pay rent
+// const last = tasks[tasks.length - 1];
+// console.log(getTitle(last)); // Pay rent
 
 
-tasks.length // 3
-tasks.length - 1 // 2 
+// tasks.length // 3
+// tasks.length - 1 // 2 
 
-tasks[2]//  { title: "Pay Rent" }
+// tasks[2]//  { title: "Pay Rent" }
 
 
 // The design check gains its third question: **what shape is the data?** — answered _first_.
