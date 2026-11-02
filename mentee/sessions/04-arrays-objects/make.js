@@ -16,7 +16,8 @@ console.log("make.js running");
 // > 5. **A reference test:** make a second variable pointing at one item (`const favourite = songs[0]`), change something through it, then log the original. Explain what happened in a comment
 
 const artists = [
-    {name: "Loathe", albums: 5, active: "yes"},
-    {name: "Tame Impala", albums: 7, active: "yes"},
-    {name: "Daft Punk", albums: 10, active: "no"}
+    {name: "Loathe", albums: 5, isactive: true},
+    {name: "Tame Impala", albums: 7, isactive: true},
+    {name: "Daft Punk", albums: 10, isactive: false}
 ];
+
