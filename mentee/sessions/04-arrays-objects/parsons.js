@@ -122,3 +122,35 @@ tasks[2]//  { title: "Pay Rent" }
 // >
 // > 1. Describe the data's shape **in English**, then write **one example item**
 // > 2. List the functions: name, what each needs, what each gives back
+
+/*
+    1. The shopping cart is an array of objects, with each object having properties like the item number, name, price, etc.
+
+    2. Functions:
+        A. addToCart, needs a product object and the cart array, gives back the cart array with the new item added.
+        B. removeFromCart, needs the index of the item in the cart to remove and the cart array, gives back the cart array with the item at the provided index removed from it. (Instead of pop, I would expect users to want to remove items from any position in the array even if we haven't used a function like that yet.)
+        C. clearCart, needs the cart array, gives nothing back but sets the array as empty.
+*/
+
+// We want to add 3 pens, 1 laptop, 2 notebooks. 
+
+// product name, price, quantity
+
+// const item = {
+//     name: "Pen",
+//     price: 5,
+//     quantity: 3
+// };
+
+
+
+// 1.  shopping cart data
+const cart = [
+ {name: "pen", price: 5, quantity: 3}
+  {name: "laptop", price: 1200, quantity: 1}
+   {name: "notebook", price: 4, quantity: 2}
+
+]
+2. 
+function getEachLineTotal(){
+    cart.quantity
