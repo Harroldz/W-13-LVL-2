@@ -45,10 +45,10 @@ const user = {
 // const property = "name";
 // console.log(student[property]);
 
-const tasks = [
-  { title: "Buy milk", isDone: false },
-  { title: "Call bank", isDone: true },
-];
+// const tasks = [
+//   { title: "Buy milk", isDone: false },
+//   { title: "Call bank", isDone: true },
+// ];
 
 // Goal: mark the first task done, add a third task, and print `3 true`.
 
@@ -59,11 +59,11 @@ const tasks = [
 // X   tasks.isDone = true;
 // Y   tasks.push("Walk dog");
 
-tasks[0].isDone = true;
-tasks.push({ title: "Walk dog", isDone: false });
-console.log(tasks.length, tasks[0].isDone);
-tasks.pop();
-console.log(tasks);
+// tasks[0].isDone = true;
+// tasks.push({ title: "Walk dog", isDone: false });
+// console.log(tasks.length, tasks[0].isDone);
+// tasks.pop();
+// console.log(tasks);
 
 
 // const searchProductHistory = ["Laptop", "Socks", ];
@@ -72,6 +72,29 @@ console.log(tasks);
 // searchProductHistory.push("Socks")
 
 
-const cart = [];
+// const cart = [];
 
-cart.push({name: "shirt", price: 1.99})
+// cart.push({name: "shirt", price: 1.99})
+
+// cart.push({name: "socks", price: 2.99});
+
+
+// [
+//     {name: "shirt", price: 1.99}
+//     {name: "socks", price: 2.99}
+// ]
+
+
+const tasks = [
+    {title: "Buy Milk"},
+    {title: "Call Bank"},
+    {title: "Pay Tent"}
+];
+
+function getTitle(task){
+    return task.____
+}
+
+const last = tasks[tasks.____ - 1]
+console.log(getTitle(last)) // Pay rent
+
