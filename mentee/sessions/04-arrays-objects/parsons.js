@@ -65,12 +65,10 @@ const user = {
 // tasks.pop();
 // console.log(tasks);
 
-
 // const searchProductHistory = ["Laptop", "Socks", ];
 
 // searchProductHistory.push("Laptop");
 // searchProductHistory.push("Socks")
-
 
 // const cart = [];
 
@@ -78,23 +76,49 @@ const user = {
 
 // cart.push({name: "socks", price: 2.99});
 
-
 // [
 //     {name: "shirt", price: 1.99}
 //     {name: "socks", price: 2.99}
 // ]
 
+// Fill in the blank
+// const tasks = [
+//     {title: "Buy Milk"},
+//     {title: "Call Bank"},
+//     {title: "Pay Tent"}
+// ];
+
+// function getTitle(task){
+//     return task.____
+// }
+
+// const last = tasks[tasks.____ - 1]
+// console.log(getTitle(last)) // Pay rent
 
 const tasks = [
-    {title: "Buy Milk"},
-    {title: "Call Bank"},
-    {title: "Pay Tent"}
+  { title: "Buy Milk" }, // 0
+  { title: "Call Bank" }, // 1
+  { title: "Pay Rent" }, // 2
 ];
 
-function getTitle(task){
-    return task.____
+function getTitle(task) {
+  return task.title;
 }
 
-const last = tasks[tasks.____ - 1]
-console.log(getTitle(last)) // Pay rent
+const last = tasks[tasks.length - 1];
+console.log(getTitle(last)); // Pay rent
 
+
+tasks.length // 3
+tasks.length - 1 // 2 
+
+tasks[2]//  { title: "Pay Rent" }
+
+
+// The design check gains its third question: **what shape is the data?** — answered _first_.
+
+
+// > A **shopping cart**. It holds items. Each item has a name, a price, and how many you're buying. The app shows how many different items are in the cart, and a line for each one like `3 × Pen: $6`.
+// >
+// > 1. Describe the data's shape **in English**, then write **one example item**
+// > 2. List the functions: name, what each needs, what each gives back
