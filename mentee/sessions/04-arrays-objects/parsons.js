@@ -6,13 +6,13 @@ console.log("parsons.js running");
 
 // Goal output: `Call bank`
 
-// const user = {
-//   name: "John",
-//   tasks: [
-//     { title: "Buy Milk", isDone: false },
-//     { title: "Call Bank", isDone: true },
-//   ],
-// };
+const user = {
+  name: "John",
+  tasks: [
+    { title: "Buy Milk", isDone: false },
+    { title: "Call Bank", isDone: true },
+  ],
+};
 
 // A   const tasks = user.tasks;
 // B   const second = tasks[1];
@@ -95,28 +95,25 @@ console.log("parsons.js running");
 // const last = tasks[tasks.____ - 1]
 // console.log(getTitle(last)) // Pay rent
 
-// const tasks = [
-//   { title: "Buy Milk" }, // 0
-//   { title: "Call Bank" }, // 1
-//   { title: "Pay Rent" }, // 2
-// ];
+const tasks = [
+  { title: "Buy Milk" }, // 0
+  { title: "Call Bank" }, // 1
+  { title: "Pay Rent" }, // 2
+];
 
-// function getTitle(task) {
-//   return task.title;
-// }
+function getTitle(task) {
+  return task.title;
+}
 
-// const last = tasks[tasks.length - 1];
-// console.log(getTitle(last)); // Pay rent
+const last = tasks[tasks.length - 1];
+console.log(getTitle(last)); // Pay rent
 
+tasks.length; // 3
+tasks.length - 1; // 2
 
-// tasks.length // 3
-// tasks.length - 1 // 2 
-
-// tasks[2]//  { title: "Pay Rent" }
-
+tasks[2]; //  { title: "Pay Rent" }
 
 // The design check gains its third question: **what shape is the data?** — answered _first_.
-
 
 // > A **shopping cart**. It holds items. Each item has a name, a price, and how many you're buying. The app shows how many different items are in the cart, and a line for each one like `3 × Pen: $6`.
 // >
@@ -132,7 +129,7 @@ console.log("parsons.js running");
         C. clearCart, needs the cart array, gives nothing back but sets the array as empty.
 */
 
-// We want to add 3 pens, 1 laptop, 2 notebooks. 
+// We want to add 3 pens, 1 laptop, 2 notebooks.
 
 // product name, price, quantity
 
@@ -142,15 +139,33 @@ console.log("parsons.js running");
 //     quantity: 3
 // };
 
-
-
 // 1.  shopping cart data
 const cart = [
- {name: "pen", price: 5, quantity: 3}
-  {name: "laptop", price: 1200, quantity: 1}
-   {name: "notebook", price: 4, quantity: 2}
+  { name: "pen", price: 5, quantity: 3 },
+  { name: "laptop", price: 1200, quantity: 1 },
+  { name: "notebook", price: 4, quantity: 2 },
+];
 
-]
-2. 
-function getEachLineTotal(){
-    cart.quantity
+// function getEachLineTotal(item){
+//    return `${item.quantity} × ${item.name}: $${item.price * item.quantity}`;
+// }
+
+
+// Calculates each item
+function getEachLineTotal(item) {
+  return item.price * item.quantity;
+}
+
+// formatting the output
+function displayItem(item) {
+  const getTotal = getEachLineTotal(item);
+  return `${item.quantity} × ${item.name}: $${getTotal}`;
+}
+
+console.log("Items in our cart", cart.length);
+
+console.log(displayItem(cart[0]));
+
+console.log(displayItem(cart[1]));
+
+console.log(displayItem(cart[2]));
