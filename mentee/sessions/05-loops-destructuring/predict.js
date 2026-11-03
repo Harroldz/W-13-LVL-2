@@ -6,7 +6,7 @@ console.log("predict.js running");
 // 1. Whats t.title at the end
 
 const t = { title: "A"};
-const u = t:
+const u = t;
 u.title = "B";
 
 
@@ -23,6 +23,6 @@ const shop = {
 
 // 4. What does f() return?
 function f(){
-    return 1,
+    return 1;
     return 2;
 }
