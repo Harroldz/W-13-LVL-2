@@ -53,3 +53,29 @@ function age(age) {
 }
 
 console.log(age(10)); //
+
+// Prediction 
+function countUrgent(tasks) {
+  for (const task of tasks) {
+    let count = 0;
+    if (task.priority === 1) {
+      count = count + 1;
+    }
+    return count;
+  }
+}
+
+const tasks = [
+  { title: "A", priority: 2 },
+  { title: "B", priority: 1 },
+  { title: "C", priority: 1 }
+];
+
+console.log(countUrgent(tasks));
+```
+
+// In the form, answer all three:
+
+// > 1. It logs ___
+// > 2. The loop body runs ___ time(s)
+// > 3. The author wanted ___, and the fix is ___
