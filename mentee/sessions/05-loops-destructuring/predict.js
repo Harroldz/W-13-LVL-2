@@ -72,10 +72,14 @@ const tasks = [
 ];
 
 console.log(countUrgent(tasks));
-```
 
 // In the form, answer all three:
 
 // > 1. It logs ___
 // > 2. The loop body runs ___ time(s)
 // > 3. The author wanted ___, and the fix is ___
+
+//  for (let i = 0; i <= 2; i++) {
+//     console.log(i);
+//  }
+
