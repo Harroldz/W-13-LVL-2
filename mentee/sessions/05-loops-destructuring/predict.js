@@ -83,3 +83,9 @@ console.log(countUrgent(tasks));
 //     console.log(i);
 //  }
 
+const fruits = ["Kiwi", "Mango", "Dragon Fruit"];
+
+for (const fruit of fruits) {
+    console.log(fruits);
+}
+
