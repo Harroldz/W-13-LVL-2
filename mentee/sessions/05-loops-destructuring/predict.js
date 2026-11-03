@@ -38,40 +38,40 @@ console.log("predict.js running");
 // console.log(numbersArray.length); // 3
 
 // 4. What does f() return?
-function f() {
-  return 1;
-  return 2;
-}
-console.log(f()); // 1, 2 //
+// function f() {
+//   return 1;
+//   return 2;
+// }
+// console.log(f()); // 1, 2 //
 
-function age(age) {
-  if (age >= 18) {
-    return "Adult";
-  }
+// function age(age) {
+//   if (age >= 18) {
+//     return "Adult";
+//   }
 
-  return "Minor";
-}
+//   return "Minor";
+// }
 
-console.log(age(10)); //
+// console.log(age(10)); //
 
 // Prediction 
-function countUrgent(tasks) {
-  for (const task of tasks) {
-    let count = 0;
-    if (task.priority === 1) {
-      count = count + 1;
-    }
-    return count;
-  }
-}
+// function countUrgent(tasks) {
+//   for (const task of tasks) {
+//     let count = 0;
+//     if (task.priority === 1) {
+//       count = count + 1;
+//     }
+//     return count;
+//   }
+// }
 
-const tasks = [
-  { title: "A", priority: 2 },
-  { title: "B", priority: 1 },
-  { title: "C", priority: 1 }
-];
+// const tasks = [
+//   { title: "A", priority: 2 },
+//   { title: "B", priority: 1 },
+//   { title: "C", priority: 1 }
+// ];
 
-console.log(countUrgent(tasks));
+// console.log(countUrgent(tasks));
 
 // In the form, answer all three:
 
@@ -86,6 +86,6 @@ console.log(countUrgent(tasks));
 const fruits = ["Kiwi", "Mango", "Dragon Fruit"];
 
 for (const fruit of fruits) {
-    console.log(fruits);
+    console.log(fruit);
 }
 
