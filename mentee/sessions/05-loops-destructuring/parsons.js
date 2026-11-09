@@ -160,3 +160,17 @@ function getAverageScore(students) {
 }
 
 console.log(getAverageScore(students));
+
+function getNumberPassed(students){
+    let passed = 0;
+
+    for (let i = 0; i < students.length; i++) {
+        if (students[i].score >= 60) {
+            passed++;
+        }
+    }
+
+    return passed;
+}
+
+console.log(getNumberPassed(students));
