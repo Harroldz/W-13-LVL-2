@@ -36,3 +36,36 @@ console.log(total);
 // G   return null;
 // H   }
 // X   } else { return null; }
+
+const tasks = [
+  { title: "Gym", isDone: true },
+  { title: "Call bank", isDone: false },
+  { title: "Buy Grocieries", isDone: false },
+];
+
+function findTask(tasks, title) {
+  // A
+  for (const task of tasks) {
+    // B
+    if (task.title === title) {
+      // C
+      return task; // D
+    } // E
+  } // F
+  return null; // G
+} // H
+
+console.log(findTask(tasks, "Call bank"));
+
+console.log(findTask(tasks, "Walk dog"));
+
+
+// Number the list — `1. Buy milk`, `2. Call bank`, `3. Pay rent`:
+
+// ```js
+// const tasks = ["Buy milk", "Call bank", "Pay rent"];
+
+// for (let i = ____; i ____ tasks.length; i++) {
+//   console.log(`${____}. ${tasks[i]}`);
+// }
+// ```
