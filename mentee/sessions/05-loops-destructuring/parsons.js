@@ -174,3 +174,33 @@ function getNumberPassed(students){
 }
 
 console.log(getNumberPassed(students));
+
+function getNumberPassed(students) {
+  let passed = 0;
+
+  for (let i = 0; i < students.length; i++) {
+    if (students[i].score >= 60) {
+      passed++;
+    }
+  }
+
+  return passed;
+}
+
+console.log(getNumberPassed(students));
+
+function getTopStudent(students) {
+  if (students.length === 0) return null;
+
+  let top = students[0];
+
+  for (const student of students) {
+    if (student.score > top.score) {
+      top = student;
+    }
+  }
+
+  return top;
+}
+
+console.log(getTopStudent(students));
