@@ -109,3 +109,8 @@ console.log("parsons.js running");
 
 // const { ____, ____ } = task;
 // console.log(`${title} is priority ${priority}`);
+
+const task = { title: "Buy milk", isDone: false, priority: 1 };
+
+const { title, priority } = task;
+console.log(`${title} is priority ${priority}`);
