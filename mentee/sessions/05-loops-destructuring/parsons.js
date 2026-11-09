@@ -14,3 +14,25 @@ console.log("parsons.js running");
 // F   console.log(total);
 // X   total = price;
 // Y   const total = 0;
+
+const prices = [5, 10, 20];
+let total = 0;
+for (const price of prices) {
+  total = total + price;
+}
+console.log(total);
+
+
+
+// Goal: `findTask(tasks, "Call bank")` returns the Call bank object. `findTask(tasks, "Walk dog")` returns `null`.
+
+// ```
+// A   function findTask(tasks, title) {
+// B   for (const task of tasks) {
+// C   if (task.title === title) {
+// D   return task;
+// E   }
+// F   }
+// G   return null;
+// H   }
+// X   } else { return null; }
