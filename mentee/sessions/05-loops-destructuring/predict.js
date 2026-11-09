@@ -89,3 +89,24 @@ for (const fruit of fruits) {
     console.log(fruit);
 }
 
+// let index = 2;
+// for (let i = 0; i < 1; index++) {
+//   console.log(fruits[index]);
+// }
+
+// const pay = 100;
+
+// for (let week = 2; week <= 12; week += 2) {
+//   const payment = pay * 2;
+
+//   console.log(`Week ${week}: Pay employee $${payment}`);
+// }
+
+// When should we use a for loop?
+// When you need the index
+// When you have control over the count
+
+//When should we use a for of loop?
+// When you only need the values from an array
+// When you want to show all elements/items in a array.
+
