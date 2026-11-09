@@ -110,7 +110,52 @@ console.log("parsons.js running");
 // const { ____, ____ } = task;
 // console.log(`${title} is priority ${priority}`);
 
-const task = { title: "Buy milk", isDone: false, priority: 1 };
+// const task = { title: "Buy milk", isDone: false, priority: 1 };
 
-const { title, priority } = task;
-console.log(`${title} is priority ${priority}`);
+// const { title, priority } = task;
+// console.log(`${title} is priority ${priority}`);
+
+// > A **gradebook**. There's a list of students, each with a name and a score. The app shows the **class average**, **how many passed** (60 or more), and **the top student**.
+// >
+// > 1. Shape, in English, and one example student
+// > 2. The functions — name, needs, gives back
+// > 3. **New:** which loop pattern does each function use?
+
+/*
+    1. Students is an array of objects.
+    const students = [
+        { name: "", score: 0 },
+        { name: "", score: 0 },
+        { name: "", score: 0 },
+        { name: "", score: 0 },
+        { name: "", score: 0 },
+    ];
+
+    2. 3 functions:
+        getAverageScore() takes the array of students and returns a number which is the average of all scores.
+        getNumberPassed() takes the array of students and returns a number which is how many of the students has a score equal to or greater than 60.
+        getTopStudent() takes the array of students and returns text which is the name of the student with the highest score.
+
+    3. which loop pattern does each function uses:
+*/
+
+  const students = [
+        { name: "John", score: 88 },
+        { name: "Bob", score: 92 },
+        { name: "Jared", score: 50 },
+        { name: "Phil", score: 77 },
+        { name: "Harry", score: 45 },
+    ];
+
+    function getAverageScore(students){
+            if (students.length === 0) return null;
+
+            let total = 0;
+
+            for ( let i = 0; i < students.length; i++){
+                total += students[i].score
+
+            }
+    }
+
+    
