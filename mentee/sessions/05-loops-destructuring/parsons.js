@@ -69,3 +69,10 @@ console.log(findTask(tasks, "Walk dog"));
 //   console.log(`${____}. ${tasks[i]}`);
 // }
 // ```
+
+const tasks = ["Buy milk", "Call bank", "Pay rent"];
+
+for (let i = 0; i < tasks.length; i++) {
+  console.log(`${i + 1}. ${tasks[i]}`);
+}
+
