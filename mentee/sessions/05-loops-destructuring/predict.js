@@ -111,22 +111,20 @@ console.log("predict.js running");
 // When you want to show all elements/items in a array.
 
 const tasks = [
-    {title: "A", isDone: true},
-    {title: "B", isDone: false},
-    {title: "C", isDone: false},
+  { title: "A", isDone: true },
+  { title: "B", isDone: false },
+  { title: "C", isDone: false },
 ];
 
-
-
-let count = 0
+let count = 0;
 let last = "";
 
-
-for (count task of tasks){
-    if (!task.isDone){
-        count = count + 1;
-        last = task.title;
-    }
+for (const task of tasks) {
+  if (!task.isDone) {
+    count = count + 1;
+    last = task.title;
+  }
 }
 
-//testing
+console.log(count); // 2
+console.log(last); // C
