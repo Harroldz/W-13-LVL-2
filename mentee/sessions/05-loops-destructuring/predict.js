@@ -83,11 +83,11 @@ console.log("predict.js running");
 //     console.log(i);
 //  }
 
-const fruits = ["Kiwi", "Mango", "Dragon Fruit"];
+// const fruits = ["Kiwi", "Mango", "Dragon Fruit"];
 
-for (const fruit of fruits) {
-    console.log(fruit);
-}
+// for (const fruit of fruits) {
+//     console.log(fruit);
+// }
 
 // let index = 2;
 // for (let i = 0; i < 1; index++) {
@@ -110,3 +110,18 @@ for (const fruit of fruits) {
 // When you only need the values from an array
 // When you want to show all elements/items in a array.
 
+const tasks = [
+    {title: "A", priority: 2},
+    {title: "B", priority: 1},
+    {title: "C", priority: 1},
+];
+
+let count = 0
+let last = "";
+
+for (count task of tasks){
+    if (!task.isDone){
+        count = count + 1;
+        last = task.title
+    }
+}
