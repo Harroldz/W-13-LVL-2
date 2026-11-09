@@ -76,31 +76,36 @@ console.log("parsons.js running");
 //   console.log(`${i + 1}. ${tasks[i]}`);
 // }
 
-const product = {
-    name: "MacBook Air",
-    price: 1000,
-    rating: 4.4,
-    inStock: true,
-    category: "Electronics",
-    brand: "Apple"
-}
+// const product = {
+//     name: "MacBook Air",
+//     price: 1000,
+//     rating: 4.4,
+//     inStock: true,
+//     category: "Electronics",
+//     brand: "Apple"
+// }
 
-function ProductCard({product}){
-    return(
-        <div>
-            <h2>{product.name}</h2>
-            <p>${product.price}</p>
-        </div>
-    );
-}
+// function ProductCard({product}){
+//     return(
+//         <div>
+//             <h2>{product.name}</h2>
+//             <p>${product.price}</p>
+//         </div>
+//     );
+// }
 
-function ProductCard({product}){
-    const {name, price} = product
+// function ProductCard({product}){
+//     const {name, price} = product
 
-  eturn(
-        <div>
-            <h2>{name}</h2>
-            <p>${price}</p>
-        </div>
-    );
-}
+//   eturn(
+//         <div>
+//             <h2>{name}</h2>
+//             <p>${price}</p>
+//         </div>
+//     );
+// }
+
+// const task = { title: "Buy milk", isDone: false, priority: 1 };
+
+// const { ____, ____ } = task;
+// console.log(`${title} is priority ${priority}`);
