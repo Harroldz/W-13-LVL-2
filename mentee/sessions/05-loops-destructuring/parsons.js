@@ -139,23 +139,24 @@ console.log("parsons.js running");
     3. which loop pattern does each function uses:
 */
 
-  const students = [
-        { name: "John", score: 88 },
-        { name: "Bob", score: 92 },
-        { name: "Jared", score: 50 },
-        { name: "Phil", score: 77 },
-        { name: "Harry", score: 45 },
-    ];
+const students = [
+  { name: "John", score: 88 },
+  { name: "Bob", score: 92 },
+  { name: "Jared", score: 50 },
+  { name: "Phil", score: 77 },
+  { name: "Harry", score: 45 },
+];
 
-    function getAverageScore(students){
-            if (students.length === 0) return null;
+function getAverageScore(students) {
+  if (students.length === 0) return null;
 
-            let total = 0;
+  let total = 0;
 
-            for ( let i = 0; i < students.length; i++){
-                total += students[i].score
+  for (let i = 0; i < students.length; i++) {
+    total += students[i].score;
+  }
 
-            }
-    }
+  return total / students.length;
+}
 
-    
+console.log(getAverageScore(students));
