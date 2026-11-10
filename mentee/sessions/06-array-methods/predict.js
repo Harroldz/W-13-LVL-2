@@ -9,11 +9,11 @@ const tasks = [
 ];
 
 const titles = tasks.map((task) => {
-  task.title;
+  return task.title;
 });
 
 const open = tasks.filter((task) => !task.isDone);
 
-console.log(titles);
-console.log(open.length);
-console.log(tasks.length);
+console.log(titles); //  ["buy milk", "call bank", "pay rent"]
+console.log(open.length); // 2
+console.log(tasks.length); // 3
