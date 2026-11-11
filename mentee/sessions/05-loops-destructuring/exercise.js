@@ -6,12 +6,6 @@
 
 // This is the main homework. Loop through every expense, `getTotal`, `getUnpaidTotal`, destructuring at least once — see the M1 brief.
 
-
-// Design check:
-// Shape: a list of expenses. Each has a label, amount, category,
-// and whether it has been paid.
-// Example: { label: "Internet", amount: 45, category: "Home", isPaid: false }
-
 const expenses = [
   { label: "Internet", amount: 45, category: "Home", isPaid: false },
   { label: "Rent", amount: 1200, category: "Housing", isPaid: false },
