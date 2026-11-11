@@ -39,7 +39,13 @@ const weather = {
 
 // ---
 
+function markFavourite(artist) {
+  artist.isFavourite = true;
+}
 
+markFavourite(artists[2]);
+
+console.log(artists[2].isFavourite);
 
 // **Submit in `#lvl-2-homework-or-exercise-subm` before the next session.**
 
