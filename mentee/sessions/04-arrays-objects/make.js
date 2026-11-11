@@ -21,6 +21,19 @@ const artists = [
     {name: "Daft Punk", albums: 10, isactive: false}
 ];
 
+function getActiveStatus(artist) {
+  if (artist.isActive) {
+    return "Active";
+  }
+  return "Retired";
+}
+
+function describeArtist(artist) {
+  return `${artist.name} has ${artist.albums} albums and it is ${artist.isactive} that they are active.`;
+}
+
+ console.log(describeArtist(artists[0]));
+
 
 
 //example of functional model
