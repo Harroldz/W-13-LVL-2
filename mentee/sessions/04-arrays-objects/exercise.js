@@ -50,3 +50,12 @@ console.log(artists[2].isFavourite);
 // **Submit in `#lvl-2-homework-or-exercise-subm` before the next session.**
 
 // Stuck? _"I got stuck at \_\_\_ and here's what I tried"_ is a great question — post it.
+
+
+//Hey!  Part 1 is right, a couple of things on Part 2:
+
+// • Part 2 (the function): markFavourite is written correctly, but the file stops with "artists is not defined". The artists array lives in make.js, and the task says to add the function to your Make task. Where should it go?
+
+// • Part 2 (written parts): the prediction before running, and the one sentence on why this works when f(x) in the warm-up didn't change x, are missing.
+
+// Fix those and you're all set!
