@@ -82,3 +82,15 @@ console.log(getPriority(expenses[4]));
 // **Submit in `#lvl-2-homework-or-exercise-subm` before the next session.**
 
 // Stuck? _"I got stuck at \_\_\_ and here's what I tried"_ is a great question — post it. 
+
+// Hi! Your Parsons is right and your Stage 1 functions work. Stage 2 is the main homework here and it isn't in yet:
+
+// • A loop that describes every expense, replacing the `expenses[0]`, `expenses[1]`... lines.
+
+// • `getTotal(expenses)`: returns the total of all amounts.
+
+// • `getUnpaidTotal(expenses)`: returns the total still to pay.
+
+// • Destructuring used at least once.
+
+// Your Parsons count loop already has the pattern you need for both totals. Also, the brief asks for the app to live in its own `expense-tracker/app.js`.
