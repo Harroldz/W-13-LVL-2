@@ -20,9 +20,9 @@ console.log("parsons.js running");
 // Y   const titles = open.map((task) => { task.title; });
 // ```
 
-const open = tasks.filter((task) => !task.isDone);
-const titles = open.map((task) => task.title);
-console.log(titles); // ABC
+// const open = tasks.filter((task) => !task.isDone);
+// const titles = open.map((task) => task.title);
+// console.log(titles); // ABC
 
 
 // `search` is `"Nope"` — a title that isn't in the list. Goal: print `Not found`, **not** crash.
@@ -47,23 +47,25 @@ console.log(titles); // ABC
 // X   console.log(found.priority);
 // ```
 
-const found = tasks.find((task) => task.title === search);
-if (found) {
-  console.log(found.priority);
-} else {
-  console.log("Not found");
-}
+// const found = tasks.find((task) => task.title === search);
+// if (found) {
+//   console.log(found.priority);
+// } else {
+//   console.log("Not found");
+// }
 
-// const users = [
-//   { name: "Ana", age: 22, role: "admin", isActive: true },
-//   { name: "Luis", age: 15, role: "user", isActive: false },
-//   { name: "Sam", age: 31, role: "user", isActive: true },
-// ];
+const users = [
+  { name: "Ana", age: 22, role: "admin", isActive: true },
+  { name: "Luis", age: 15, role: "user", isActive: false },
+  { name: "Sam", age: 31, role: "user", isActive: true },
+];
 
-// const names = users.____((user) => user.name); // ["Ana","Luis","Sam"]
+console.log(names);
 
-// const adultCount = users.____((user) => user.age >= 18).length; // 2
+ const names = users.map((user) => user.name); // ["Ana","Luis","Sam"]
 
-// const admin = users.____((user) => user.role === "admin"); // the Ana object
+ const adultCount = users.filter((user) => user.age >= 18).length; // 2
 
-// const activeCount = users.filter((user) => user.isActive).____; // 2
+ const admin = users.____((user) => user.role === "admin"); // the Ana object
+
+ const activeCount = users.filter((user) => user.isActive).____; // 2
