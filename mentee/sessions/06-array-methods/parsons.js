@@ -60,12 +60,22 @@ const users = [
   { name: "Sam", age: 31, role: "user", isActive: true },
 ];
 
+const names = users.map((user) => user.name); // ["Ana","Luis","Sam"]
+
 console.log(names);
 
- const names = users.map((user) => user.name); // ["Ana","Luis","Sam"]
+const adultCount = users.filter((user) => user.age >= 18).length; // 2
+console.log(adultCount);
 
- const adultCount = users.filter((user) => user.age >= 18).length; // 2
+const admin = users.find((user) => user.role === "admin"); // the Ana object
 
- const admin = users.____((user) => user.role === "admin"); // the Ana object
+console.log(admin);
 
- const activeCount = users.filter((user) => user.isActive).____; // 2
+const activeCount = users.filter((user) => user.isActive).length; // 2
+
+console.log(activeCount);
+
+//map
+//length
+//find
+//filter
