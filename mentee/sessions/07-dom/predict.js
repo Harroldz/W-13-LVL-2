@@ -78,21 +78,49 @@ console.log("predict.js running");
 
 // Prediction - What will the page show?
 
-const tasks = [{ title: "Buy milk", isDone: false }];
-const list = document.querySelector("#task-list");
+// const tasks = [{ title: "Buy milk", isDone: false }];
 
-function createTaskElement({ title, isDone }) {
-  const item = document.createElement("li");
-  item.textContent = isDone ? `✓ ${title}` : title;
-  return item;
-}
+// const list = document.querySelector("#task-list");
 
-function render() {
-  list.textContent = "";
-  tasks.forEach((task) => { list.append(createTaskElement(task)); });
-}
+// function createTaskElement(task) {
+//   const item = document.createElement("li");
+//   item.textContent = task;
+//   return item;
+// }
 
-render();
+// function render() {
+//   list.textContent = "";
+//   tasks.forEach((task) => {
+//     list.append(createTaskElement(task));
+//   });
+// }
 
-tasks.push({ title: "Call bank", isDone: false });
-tasks[0].isDone = true;
+// render();
+
+// tasks.push({ title: "Call bank", isDone: false });
+// tasks[0].isDone = true;
+
+// render();
+
+// render();
+
+// 1. Target the UL in the HTML doc using DOM.
+
+const unOrderedList = document.getElementById("list");
+const newHeading = document.getElementById("change");
+
+newHeading.textContent = "Welcome";
+
+const listItem = document.createElement("li");
+listItem.textContent = "Buy milk";
+
+listItem.classList.add("done");
+listItem.classList.remove("done");
+
+const listItem2 = document.createElement("li");
+listItem2.textContent = "Call Bank";
+
+const listItem3 = document.createElement("li");
+listItem3.textContent = "Walk Dog";
+
+unOrderedList.append(listItem2, listItem);
