@@ -2,32 +2,64 @@
 
 console.log("predict.js running");
 
-document.querySelector(".demo") // class
-document.querySelector("#demo") // id
-document.getElementById("demo") // id
-document.querySelector
+// document.querySelector(".demo") // class
+// document.querySelector("#demo") // id
+// document.getElementById("demo") // id
+// document.querySelector("h1") // tag
+// document.querySelectorAll()
+
+// const demo = document.querySelectorAll(".heading");
+
+// demo.forEach((heading) => {
+//   const updateHeading = document.createElement("h1");
+
+//   updateHeading.textContent = "Morning";
+
+//   heading.append(updateHeading);
+// });
+
+// textContent
+// demo.textContent = "Morning";
+
+// demo.innerHTML = "<em>Hello World</em>";
 
 // Warm Up
 // 1. What's in `out`?
-//    ```js
-//    const nums = [1, 2, 3];
-//    const out = nums.map((n) => { n * 2; });
-//   console.log(out);
-//    ```
+
+// const nums = [1, 2, 3];
+// const out = nums.map((n) => n * 2);
+
+// console.log(out);
 
 // 2. `[1, 2, 3].filter((n) => n > 1).length` gives?
-//      console.log(filteredNums);
-//      console.log(filteredNums.length);
 
-// 3. What's `a[0].x` at the end?
-//    ```js
-//    const a = [{ x: 1 }];
-//    const b = a;
-//    b[0].x = 5;
-//    console.log(a);
-//    console.log(b);
-//    console.log(a[0].x);
-//    ```
+// const nums = [1, 2, 3];
+
+// const filteredNums = nums.filter((n) => n > 1);
+
+// console.log(filteredNums); // 2, 3
+// console.log(filteredNums.length); // 2
+
+// // 3. What's `a[0].x` at the end?
+
+// const a = [{ x: 1 }];
+// const b = a;
+// b[0].x = 5;
+
+// console.log(a); // 1
+
+// console.log(b);
+// console.log(a[0].x);
+
+// const x = [3, 4, 5];
+// const y = x;
+
+// console.log(x === y); // true
+
+// const x = [4, 5, 6];
+// const y = x.map((num) => num * 2);
+
+// console.log(x === y);
 
 // 4. What does `tasks.find((t) => t.id === 99)` give when there's no task 99?
 
@@ -41,23 +73,26 @@ document.querySelector
 
 // console.log(result);
 
+// let personName = null;
+// console.log(personName);
+
 // Prediction - What will the page show?
 
-// const tasks = [{ title: "Buy milk", isDone: false }];
-// const list = document.querySelector("#task-list");
+const tasks = [{ title: "Buy milk", isDone: false }];
+const list = document.querySelector("#task-list");
 
-// function createTaskElement({ title, isDone }) {
-//   const item = document.createElement("li");
-//   item.textContent = isDone ? `✓ ${title}` : title;
-//   return item;
-// }
+function createTaskElement({ title, isDone }) {
+  const item = document.createElement("li");
+  item.textContent = isDone ? `✓ ${title}` : title;
+  return item;
+}
 
-// function render() {
-//   list.textContent = "";
-//   tasks.forEach((task) => { list.append(createTaskElement(task)); });
-// }
+function render() {
+  list.textContent = "";
+  tasks.forEach((task) => { list.append(createTaskElement(task)); });
+}
 
-// render();
+render();
 
-// tasks.push({ title: "Call bank", isDone: false });
-// tasks[0].isDone = true;
+tasks.push({ title: "Call bank", isDone: false });
+tasks[0].isDone = true;
