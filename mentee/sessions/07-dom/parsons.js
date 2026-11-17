@@ -27,3 +27,14 @@ console.log("parsons.js running");
 // E   });
 // F   }
 // X   list.append(createTaskElement);
+
+function render() {
+  //A
+  list.textContent = ""; //B
+  tasks.forEach((task) => {
+    //C
+    list.append(createTaskElement(task)); //D
+  }); //E
+} //F
+
+render();
