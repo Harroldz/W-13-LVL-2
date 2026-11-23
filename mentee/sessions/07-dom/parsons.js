@@ -1,15 +1,16 @@
 // Session 07 — the line-ordering puzzle.
 
-console.log("parsons.js running");
+// console.log("parsons.js running");
 
-
-//  <h1>My Tasks</h1>
-//   <ul id="task-list"></ul>
+// //  <h1>My Tasks</h1>
+// //   <ul id="task-list"></ul>
 
 // const tasks = [
 //   { title: "Buy milk", isDone: false },
 //   { title: "Call bank", isDone: true },
 // ];
+
+// const list = document.querySelector("ul");
 
 // // Create one <li> for a task
 // function createTaskElement({ title, isDone }) {
@@ -20,21 +21,71 @@ console.log("parsons.js running");
 //   return item;
 // }
 
-// A   function render() {
-// B   list.textContent = "";
-// C   tasks.forEach((task) => {
-// D   list.append(createTaskElement(task));
-// E   });
+// // A   function render() {
+// // B   list.textContent = "";
+// // C   tasks.forEach((task) => {
+// // D   list.append(createTaskElement(task));
+// // E   });
+// // F   }
+// // X   list.append(createTaskElement);
+
+// function render() {
+//   //A
+//   list.textContent = ""; //B
+//   tasks.forEach((task) => {
+//     //C
+//     list.append(createTaskElement(task)); //D
+//   }); //E
+// } //F
+
+// render();
+
+//parsons problem 2 - The goal is to create a function that takes a task object, creates an HTML <li> element, adds a CSS class if the task is completed, and returns the element.
+
+// HTML CODE:
+//   <h1>My Tasks</h1>
+//   <ul id="task-list"></ul>
+
+// CSS CODE:
+// .done {
+//   text-decoration: line-through;
+//   color: gray;
+// }
+
+const tasks = [
+  { title: "Buy milk", isDone: true },
+  { title: "Call bank", isDone: false },
+  { title: "Study JavaScript", isDone: true },
+];
+
+const list = document.querySelector("#task-list");
+
+// A   function createTaskElement({ title, isDone }) {
+// B   const item = document.createElement("li");
+// C   item.textContent = title;
+// D   if (isDone) { item.classList.add("done"); }
+// E   return item;
 // F   }
-// X   list.append(createTaskElement);
+// X   item.textContent = task.title;
 
-function render() {
-  //A
-  list.textContent = ""; //B
+// A, B, C, D, E, F
+
+function createTaskElement({ title, isDone }) {
+  const item = document.createElement("li");
+  item.textContent = title;
+  if (isDone) {
+    item.classList.add("done");
+  }
+  return item;
+}
+
+function showTasks() {
+  list.textContent = "";
+
   tasks.forEach((task) => {
-    //C
-    list.append(createTaskElement(task)); //D
-  }); //E
-} //F
+    list.append(createTaskElement(task));
+  });
+}
 
-render();
+showTasks();
+showTasks();
