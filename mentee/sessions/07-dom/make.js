@@ -21,3 +21,25 @@ const songs = [
   { title: "Rush", plays: 40, isFavourite: false },
   { title: "Home", plays: 3, isFavourite: false },
 ];
+
+const list = document.querySelector("#song-list");
+const summary = document.querySelector("#summary");
+
+songs.forEach((song) => {
+  const item = document.createElement("li");
+
+  item.textContent = `${song.title} — ${song.plays} plays`;
+
+  if (song.isFavourite) {
+    item.classList.add("favourite");
+  }
+
+  list.appendChild(item);
+});
+
+const totalSongs = songs.length;
+const totalPlays = songs.reduce((total, song) => total + song.plays, 0);
+const favourites = songs.filter((song) => song.isFavourite).length;
+
+summary.textContent =
+  `${totalSongs} songs | ${totalPlays} total plays | ${favourites} favourite(s)`;
