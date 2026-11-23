@@ -22,24 +22,65 @@ const songs = [
   { title: "Home", plays: 3, isFavourite: false },
 ];
 
-const list = document.querySelector("#song-list");
-const summary = document.querySelector("#summary");
+// const summary = document.getElementById("summary");
+// const songContainer = document.getElementById("song-list");
 
-songs.forEach((song) => {
-  const item = document.createElement("li");
+function getSummary(songs) {
+  totalSongs = songs.length;
+  totalFavorites = songs.filter((song) => song.isFavourite).length;
+  return `${totalFavorites} favourites of ${totalSongs}`;
+}
 
-  item.textContent = `${song.title} — ${song.plays} plays`;
+// function createSongElement(song) {
+//     const songElement = document.createElement("li");
+//     songElement.innerText = `${song.title} - ${song.plays} plays`;
+//     if(song.isFavourite) {
+//         songElement.classList.add("favourite");
+//     }
 
-  if (song.isFavourite) {
-    item.classList.add("favourite");
+//     return songElement;
+// }
+
+function appendSongElement(song, container) {
+  container.append(song, container);
+}
+
+// function renderSongs(songs, summary, container) {
+//     summary.innerText = getSummary(songs);
+//     songs.forEach((song) => appendSongElement(song, container));
+// }
+
+// renderSongs(songs, summary, songContainer);
+
+const summary = document.getElementById("summary");
+const songContainer = document.getElementById("song-list");
+
+function createSongElement({ title, plays, isFavourite }) {
+  const songElement = document.createElement("li");
+  songElement.textContent = `${title} - ${plays} plays`;
+
+  if (isFavourite) {
+    songElement.classList.add("favourite");
   }
 
-  list.appendChild(item);
-});
+  return songElement;
+}
 
-const totalSongs = songs.length;
-const totalPlays = songs.reduce((total, song) => total + song.plays, 0);
-const favourites = songs.filter((song) => song.isFavourite).length;
+function renderSongs() {
+  songContainer.textContent = "";
 
-summary.textContent =
-  `${totalSongs} songs | ${totalPlays} total plays | ${favourites} favourite(s)`;
+  if (songs.length === 0) {
+    summary.textContent = "Nothing here yet";
+    return;
+  }
+
+  songs.forEach((song) => {
+    songContainer.append(createSongElement(song));
+  });
+
+  const favourites = songs.filter((song) => song.isFavourite).length;
+
+  summary.textContent = `${favourites} favourites of  ${songs.length}`;
+}
+
+renderSongs();
