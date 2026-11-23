@@ -90,5 +90,15 @@ showTasks();
 showTasks();
 
 
-const list = document.querySelector("#song-list");
-const list = document.getElementById("song-list");
+// const list = document.querySelector("#song-list");
+// const list = document.getElementById("song-list");
+
+// const item = document.createElement("li");
+
+{
+  /* <li>Blue - 12 plays<li/> */
+}
+
+// item.textContent = "Blue - 12 plays"
+
+// list.append(item)
