@@ -69,7 +69,6 @@ const list = document.querySelector("#task-list");
 // X   item.textContent = task.title;
 
 // A, B, C, D, E, F
-
 function createTaskElement({ title, isDone }) {
   const item = document.createElement("li");
   item.textContent = title;
@@ -89,3 +88,7 @@ function showTasks() {
 
 showTasks();
 showTasks();
+
+
+const list = document.querySelector("#song-list");
+const list = document.getElementById("song-list");
