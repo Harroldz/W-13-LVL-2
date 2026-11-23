@@ -18,8 +18,16 @@ function createIngredient(ingredient) {
   return recipeListItem;
 }
 
-
 function showIngredients() {
-    const ingredientList = document.getElementById("ingredient-list")
-    
+  const ingredientList = document.getElementById("ingredient-list");
+  ingredientList.textContent = "";
+
+  ingredients.forEach((ingredient) => {
+    // ingredientList.append(createIngredient(ingredient));
+
+    const listItem = createIngredient(ingredient);
+
+    ingredientList.append(listItem);
+  });
 }
+showIngredients();
