@@ -94,3 +94,4 @@ console.log(getPriority(expenses[4]));
 // • Destructuring used at least once.
 
 // Your Parsons count loop already has the pattern you need for both totals. Also, the brief asks for the app to live in its own `expense-tracker/app.js`.
+
