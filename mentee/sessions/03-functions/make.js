@@ -64,3 +64,5 @@ const perPerson = splitBill(total, 2);
 console.log(
   `Tip: ${format(tip)}, total ${format(total)}, each ${format(perPerson)} `,
 );
+
+
