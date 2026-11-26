@@ -59,3 +59,5 @@ if (total > 100) {
 const isDone = true;
 const label = isDone ? "Done" : "To do";
 console.log(label);
+
+
