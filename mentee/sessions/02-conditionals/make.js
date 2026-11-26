@@ -90,3 +90,4 @@ if (isMember) {
 let label = shippingCost === 0 ? "Free shipping" : `Shipping: $${shippingCost}`;
 
 console.log(label);
+
