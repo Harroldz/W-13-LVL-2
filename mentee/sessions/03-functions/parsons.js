@@ -106,3 +106,4 @@ console.log("parsons.js running");
 //     One function would be called splitBill.
 //     This function would need an amount representing the total bill with tip and an amount of people to split the total between.
 //     This function would give back the amount each person owes.
+
