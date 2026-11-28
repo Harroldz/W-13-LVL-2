@@ -63,3 +63,4 @@ console.log(b);
 
 const triple = (i) => i * 3;
 console.log(triple(2));
+
